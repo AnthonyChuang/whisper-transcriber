@@ -2,11 +2,10 @@ name: Sync with Hugging Face Hub
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -15,7 +14,13 @@ jobs:
       - name: Sync with Hugging Face Space
         uses: nateraw/huggingface-sync-action@v0.0.4
         with:
+          # REQUIRED
           hf_token: ${{ secrets.HF_TOKEN }}
-          huggingface_repo_id: anthonychuang/video-transcriber   # <-- corrected key
-          repo_type: space                                       # <-- important
-          space_sdk: gradio                                      # <-- matches your Space SDK
+          huggingface_repo_id: anthonychuang/video-transcriber
+          repo_type: space
+          space_sdk: gradio
+
+          # OPTIONAL (explicit is safer)
+          github_repo_id: AnthonyChuang/whisper-transcriber
+          private: false
+          # subdirectory: app     # <-- set if your app lives in a subfolder
