@@ -1,0 +1,178 @@
+In my opinion, the single most important idea that you could get out of this class
+is the idea that prototyping is a tremendously valuable strategy for effective design.
+In this video, I'll introduce what I mean by prototyping and why I think it's so tremendously important.
+This is going to serve as the framing for later videos that we'll use to introduce concrete techniques.
+In this class, when we talk about prototyping, what we mean is rapidly creating an approximation of a design idea
+so that you can quickly get feedback and learn.
+Prototyping is the pivotal activity that structures innovation, collaboration, and creativity in design.
+Prototypes embody design hypotheses and enable designers to get feedback.
+It's what Donald Shun calls a reflective conversation with materials.
+By trying things out and learning from that exploration, you're able to improve your design
+and be able to gain insights that you otherwise may not have.
+It's important to remember that the goal in prototyping is not the artifact, it's feedback.
+Build some prototypes, try them out, and use what you learned to try the next design.
+One way to think about a prototype is that it's a question rendered as an artifact.
+It's something that you make as a way of communicating with other stakeholders.
+These can be clients, these can be other people on your design team, these can be users of an interactive system.
+They can even be yourself.
+And the role of the prototype in this communication is it serves as a common ground
+to help people understand really concretely what everybody's talking about.
+Here's an example of what I mean by the prototype courtesy of the design firm IDEO.
+In the mid-90s, Kodak approached IDEO, asking them to help design an early consumer digital camera.
+Digital cameras were a really interesting technology because they offered new opportunities
+for being able to review and edit your photos on the camera that wasn't possible with a film camera.
+IDEO is tasked with a way to make sense of the possible interactions that you could do on a digital camera
+and render those in a concrete user interface.
+What they came up with ultimately became this, the Kodak DC210 digital camera.
+Here's the user interface on the back.
+There's a screen and several buttons for being able to navigate through the photographs.
+It also has a dial here for several modes and a zoom controller right here.
+Now let's look at the prototype on the screen.
+You'll probably notice some similarities but also some differences.
+The prototype on the screen and the final product both have buttons.
+They have a screen. They're the same, they're similar functionality in these case.
+However, there's also some important differences between this prototype and this final version.
+The first one is that the prototype is a lot bigger.
+In order to be able to build a version quickly, they couldn't make everything miniaturized,
+so it takes up a lot more physical space.
+The layout is similar but the scale has changed.
+Second, one of the most important things about a digital camera is that you'd be able to take it with you that is mobile.
+This prototype camera here had an umbilical cord going back to a Macintosh that actually ran all of the computations in interactions,
+so there was no computation on the device itself.
+And finally, this was a prototype of a digital camera where you couldn't take pictures.
+There's no lens, there's no photographic elements in this prototype.
+It's purely a way to understand better the back of camera interactions for reviewing and editing photos.
+And I think this is a really important point about prototypes,
+is that prototypes nearly always are and ought to be incomplete.
+To pop back up from that example, prototyping is a strategy for efficiently dealing with things that are hard to predict.
+And these hard to predict things are both things that you wonder whether they'll be an issue,
+but don't know what the answer is going to be, your known unknowns.
+And the things that you don't know and never even thought to think about, those are your unknown unknowns.
+And what's valuable about prototyping is it helps you get feedback quickly,
+so you don't spend time heading down the wrong path.
+If you've ever taken an art class, you know the experience of sketching before you make a painting.
+This is not just for novices, but also for the same thing.
+One of the things that we know about human psychology is that people are notoriously bad
+at being able to estimate the space of possible outcomes.
+We often consider far fewer options that are actually likely to happen,
+and this is just as true in the financial world as it is in the creative world.
+For any complex system, whether it's finance or design, the interactions of all these different ingredients
+far dominate the things that you can easily predict, and consequently our intuitions are often wrong.
+The strategy that we're going to teach you in this class is to encourage you to focus on the goals of the design,
+rather than to think about a particular design itself and try and railroad that strategy forward.
+A classic novice error is to come up with one idea for a design.
+You think you've got something that's super cool, and just keep arguing for that particular option.
+Instead of having that concrete thing that you want to argue for, think about what you hope to achieve with that design idea.
+What's your goal there?
+In this class, we're going to teach you how to set goals early and evolve them and revise your designs using data.
+As Bill Buxton points out in his excellent book, Sketching User Interfaces,
+the kinds of alternatives that you're going to consider at different points in the design process
+are going to be different.
+Early on, you may be thinking about a really broad range of possibilities.
+And then you might narrow in for a little while.
+Then you might consider some alternatives and narrow in, and this alternating flare and focus
+is a hallmark of an effective design process.
+Later on in the design, as you get towards the final product,
+you're going to be thinking about small variations like fonts or colors or microchanges in layout.
+Early on, you might be thinking about much broader ideas like,
+is this going to be a mobile service or a desktop service, and what kind of thing is it going to be anyhow.
+Recognizing the need for and value of this oscillation can help you prepare for an effective design process.
+The Palm Pilot's design process provides us with a wonderful example of prototyping.
+The Palm Pilot was one of the first digital PDAs, Personal Digital Assistance,
+and it helped you handle your to-do lists and calendar and contact information and notes.
+Its lead inventor was Jeff Hawkins, and Jeff, when he first envisioned the Palm Pilot,
+one of the first things that he did was create a block of wood that was the size of the device that he envisioned.
+And what he would do is carry this block of wood around with him,
+and he would use it as if it was a real device, so he would tap on it and enter information,
+add contacts, record things in his calendar, take notes, furiously scribbling the whole time.
+So what did Jeff and his team learn from this prototype?
+Well, they obviously didn't learn anything about the silicon or battery life or anything of the Palm Pilot,
+because the whole thing was made out of wood.
+What they learned was about the form factor, and what we can see here is this is a great example
+of the rights and roles that a prototype can play in the design process.
+A prototype should not be required to be complete.
+It's going to be incomplete in strategic and important ways.
+It should be easy to change. Don't like the size of your Palm Pilot? Just cut it off a different size.
+And finally, it should get to retire, that when you move on to a later phase in the design process,
+you no longer need the early prototypes.
+Given that we're in a class about designing computer systems and we're talking about a block of wood,
+you might reasonably ask what's going on here, or maybe what is it that prototypes prototype?
+And the answer is that there are several things that a prototype can prototype.
+One kind of prototype prototypes the feel. What does this look like?
+Another kind prototypes the implementation. What might this work like?
+And yet another kind of prototype prototypes the role.
+What might the experience of using this interactive system be like?
+This course will teach you a number of strategies that cover a bit of each of these categories.
+You can plot a prototype in two dimensions. You can think about how much you learned from that prototype,
+and you can think about how long it took you to create it.
+And what you want to be able to do, especially early on in the design process,
+is to be able to maximize the amount of learning that you're being able to get from the prototype,
+and minimize the amount of time that it's going to take you to create it.
+Because remember, a prototype is going to be incomplete,
+and it's going to be something that you're going to get rid of most likely at some point in the process.
+And so there's no point sinking a lot of time into something that you're soon going to throw away.
+Prototyping is not just for small things. When you're prototyping, you can think big, really big.
+Here's an example from Walter Dormonti, this guy right here.
+He is one of America's foremost industrial designers,
+and he's standing inside of one of the very first Boeing cross-country airplanes.
+And what he's doing is taking a look at the interior design that his company did for Boeing,
+and they still work with Boeing to this day.
+What's notable here is that you've got an interior of an aircraft, but there's no aircraft.
+This is all mocked up in a warehouse. It's the experience of an airplane without the airplane.
+In creating this prototype, they brought in a number of users and had people come on with luggage
+and try out the experience of the airplane where they would sit down,
+take their seats for the length of a cross-country flight,
+and flight attendants would come through offering food and other amenities.
+And you could see things like, are the aisles wide enough?
+Are the seats comfortable? Will the luggage racks carry the luggage that's necessary?
+Walter Teague wasn't the only industrial designer to be able to use these large prototypes at scale.
+Many of the designers creating ocean-going vessels tried the same strategy of prototyping interiors and warehouses.
+And in fact, as Walter Isaacson's biography of Steve Jobs reports,
+when Apple was creating its first retail stores, they got some warehouse space outside of San Jose,
+and every week went to a fake retail store to try out the retail experience in advance of first opening it.
+And one of the things that that biography reports about the retail experience at Apple
+was by the virtue of prototyping it and trying out different configurations of the store,
+the Apple team realized that the stores could be configured around activities such as music,
+rather than around individual products.
+And this significantly changed the layout of the Apple stores prior to their opening.
+Linus Pauling may be the premier chemist of the 20th century.
+He was awarded the Nobel Prize for his work on describing the nature of chemical bonds.
+What his work philosophy shares with that of professional designers is the practice of trying out multiple alternative ideas,
+approaches, and solution strategies.
+As he says here, the best way to have a good idea is to have a lot of ideas.
+And we see that here in a hundred different prototypes that the design firm IDEO produced for Microsoft
+when it was creating its first mouse.
+There are a number of different form alternatives that explore symmetric versus asymmetric designs,
+ones that emphasize ergonomics versus others that emphasize style.
+And being able to see all of these alternatives and hold them in one's hand
+helped Microsoft figure out which design was the best fit for it to release the mouse with.
+For the geeks in the audience, you can think about this kind of rapid prototyping strategy that we're talking about
+as being kind of like simulated annealing, where you have a space of possible options.
+Some of them are better than others.
+And what often happens with serial iterative design is that you can hill climb to the best one,
+but local improvement isn't enough.
+You need to be able to hop around the design space and try wildly different alternatives.
+That way you can find the global maximum.
+When you're creating a prototyping strategy,
+it's important to think about the cost of change over time.
+With physical products like a car or a toaster,
+the cost of making changes rises dramatically over time throughout the design process
+and even more significantly upon release.
+With desktop software that gets distributed on, say, a CD-ROM,
+the cost rise isn't quite so dramatic, but it's still pretty significant.
+Harder to make changes as you go throughout the design process
+and much more difficult once you've shipped it out to consumers.
+Websites and other forms of software as a service make it much easier to make changes over time.
+But the cost and difficulty of making changes is still increasing for a number of reasons.
+One of the most important is that people get used to a particular piece of software over time.
+And so even if you could change it easily, you'd upset and confuse a significant user base.
+The same is true for developers or any software that has APIs that people are writing applications on top of.
+Once people get used to it or have built things that rely on a piece of software,
+it becomes more difficult to change.
+All together what this means is that you want to create a design process
+where you're making your biggest changes early.
+And as you build momentum with users, you're continuing to refine and adapt
+and tweak and improve your system as it goes on.
+I think I can sum up the introductory message of this framing video in one sentence.
+It's the prototypes are questions.
+Ask lots of them. We'll see you next time.

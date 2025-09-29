@@ -1,0 +1,348 @@
+There's an intrinsic tension in design.
+On one hand, you want to be able to get feedback from real people
+as soon as you possibly can.
+On the other, in order to be able to get that feedback,
+you'd make something that works.
+You've learned how to rapidly prototype things
+with paper prototyping.
+And today, what we're going to talk about
+is how you can test rapid prototypes with users.
+So let's imagine for a moment, what
+if it was possible to create an interactive application
+without writing much or any code, and get feedback
+on that interactive application quickly?
+I think that's a pretty powerful dream.
+And like Dorothy learned in The Wizard of Oz,
+dreams can be really powerful.
+And sometimes they can even come true.
+And there's something else that Dorothy learned
+that we're going to use in this lecture.
+If you've seen the movie The Wizard of Oz,
+you'll know that when Dorothy and her compatriots arrived
+in the Emerald City, they saw a big giant wizard
+that was really scary and freaked them out.
+But eventually, they learned that that wizard was just
+a little man behind the curtain.
+And the ability of that little man behind the curtain
+to put on a big realistic show that to the visitors
+to the Emerald City seemed completely real and immersive
+is exactly what we're going to accomplish with this video's
+prototyping technique.
+So the idea behind Wizard of Oz prototyping
+is that we're going to simulate interactive behavior
+and machine functionality by having a human operator
+manipulate the levers behind the scenes.
+If you want to get a sense for just how realistic this can be,
+watch our friends from Seinfeld call a movie phone application
+to try and find out when and where movies are playing.
+Hello, and welcome to Movie 4.
+If you know the name of the movie you'd like to see,
+press 1.
+Come on, come on.
+Using your touchstone keypad, please
+enter the first three letters of the movie title now.
+You've selected Agent Zero.
+If that's correct, press 1.
+What?
+So George thinks he's calling this automated movie phone
+application.
+But it turns out that behind the scenes
+is just Kramer who's playing a wizard
+and behaving as if he were the machine.
+To be honest, he's not very good.
+I think that you all will be able to do better.
+Wizard of Oz techniques got their start
+with speech user interfaces.
+The term Wizard of Oz was coined by Jeff Kelly
+in his PhD dissertation around 1980.
+And Jeff's setup at Johns Hopkins
+actually bore more of a resemblance to the Wizard of Oz
+than you might first imagine.
+So in addition to some one-way mirrors and things
+like that, there literally was a curtain separating Jeff
+as the wizard from the participants that were using
+the speech user interfaces.
+And these Wizard of Oz prototypes
+were really important for understanding
+what will be an effective speech user interface.
+Because at the time, the recognition algorithms
+weren't very good.
+But we knew that we're going to get better.
+And Jeff asked the very important questions of,
+if we get the recognition to the point where it's effective,
+what will the user interaction be
+and what kinds of strategies might be most effective?
+And so the Wizard of Oz enabled
+Jeff to time travel into a future where speech recognition
+technology works better to try and understand
+what the user experience issues of that domain would be.
+In general, a Wizard of Oz prototype
+comprises a couple of pieces.
+First, you've got some kind of user interface
+that you're delivering to the user, which
+feels-ish like a user interface, even if it sketches
+or custom-spoken words.
+And at the same time, there's not
+any or much code that goes behind it.
+The code and interactivity is being created.
+It's a mirage from a human.
+Sometimes there's a user interface
+that the wizard has, which they cobble together
+to make life better for them.
+And in fact, back in 2000, colleagues at Berkeley and I
+built a system called SWADE, which
+helped automate Wizard of Oz testing and speech user
+interfaces.
+A Wizard of Oz prototype makes sense
+when it's faster and cheaper and easier
+than building the real thing.
+And that's going to be especially true any time
+you have recognition-based interfaces or personalization
+that's custom to a user.
+This trade-off of whether it's cheaper and faster and easier
+is also going to depend on your abilities.
+There will be some things that you know how to do quickly
+and easily, and that you might just implement.
+And there's other things that may be more difficult or more
+time consuming for you, and those
+you'll choose to Wizard of Oz.
+Wizard of Oz prototypes, like almost any other kind of prototype,
+can be higher or lower fidelity.
+And there's some important trade-offs here.
+The higher fidelity of the prototype,
+the more it feels like the real thing to users.
+In fact, sometimes you can build an interface
+that people don't even know is being powered by a wizard,
+as in the famous story of the mechanical Turk who
+was inside a chess machine.
+However, making a high fidelity user interface
+is going to take a lot of time.
+And users may be more reluctant to critique
+a user interface that's really high fidelity.
+And so early on, I recommend quick and dirty paper prototypes
+being the most powerful thing to use for a Wizard of Oz test.
+Because users will feel like they can give you
+any kind of feedback.
+It's clear you haven't put a lot of time into it yet.
+And it's fast for you to make.
+And so you actually haven't put a lot of time into it yet.
+A few years ago, my friend, Sep Cambar,
+created a company called Aardvark, which
+is a social search engine.
+It was really good at helping you
+use your social network to find answers from other people.
+So the way that it works is you ask a question
+via instant message via Google Chat.
+And it's going to automatically route it
+to a friend of yours or a friend of a friend who
+has the expertise to answer that question.
+One of the hard parts about building a service like this
+is, how do you do the routing?
+Eventually, they figured out an algorithm to do this.
+But to bootstrap that, both to figure out
+what algorithm to build and to get a user experience going
+before they had built anything, they
+had a Wizard of Oz prototype.
+So the way that it works is that Aardvark employees would
+get the question, and they would manually select the person
+that it was going to get routed to.
+Damon Horowitz, the co-founder of Aardvark,
+put it this way in a conference.
+He said that if people like it in this super crappy form,
+then it's worth building because they'll like it
+even more when we build the real thing.
+So if you want to be like Kramer or Aardvark,
+how can you make a wizard-powered prototype?
+Here's the sketch of what you'll need to do in five easy steps.
+First, figure out what scenarios you're going to support.
+It's a lot easier to build a Wizard of Oz prototype
+for a limited set of functionality.
+I like Wizard of Oz prototypes because it forces you
+to figure out what should happen in response
+to human behavior.
+Then put together some kind of user interface skeleton
+that's the thing that the end user is going to see.
+Third, if you need to, develop the hooks
+for the Wizard of Input.
+If you're going to have a remote wizard,
+or they're going to be controlling some software
+functionality from behind the scenes.
+Fourth, and as part of this, you'll
+need to figure out exactly what kind of input
+the wizard is allowed to offer.
+Are they going to be selecting from a menu of options,
+offering free response, speaking text?
+Will you give them a decision tree that
+controls their behavior, or are you
+going to let them be more free form?
+If you have a paper prototype, their role
+is going to be pretty manual, adding widgets and moving
+sliders and making the interface go.
+When you're doing this, it's important to remember
+that ultimately the functionality that you're wizarding now
+is ultimately going to be replaced with a computer.
+And so at some point down the line,
+you will have to build some software to make it go.
+And that's important because it can be easy to fake stuff
+that's not possible to ever happen.
+And last, as with any prototype that you're
+going to test with people, practice it first
+with a friend or a colleague to get
+the hang of both doing the wizard.
+It's a very different kind of interaction
+than you may be used to.
+And also figuring out what scenarios are most effective,
+what instructions you'll need to give people,
+get out the easy bugs in the user interface
+before you bring in real users.
+And now you're ready to run the user interface.
+Like I said, you want to practice it with a friend
+first.
+Once you've got the really obvious kinks out
+and you've got your pattern down and the task's ready,
+then it's time to recruit some people to come in and try
+out your prototype.
+You can even go to places like train stations or airports
+or city street corners or coffee shops
+as a way of going to the people who
+might be using your system.
+In a Wizard of Oz prototype, there's two roles.
+You've got a facilitator who's going to talk to the user.
+And you've got a wizard who's going to manipulate the prototype.
+If you have the luxury of a team,
+it's helpful if these are two different people, in part
+because your mind is going to be full of all the things
+that you have to do.
+And if you separate these roles,
+each person can concentrate more, do a better job,
+and you have two sets of eyes looking at what the person's
+doing so you can learn more.
+But you can do this yourself if you need to.
+These can be one person doing two roles.
+If you're trying to convince somebody
+that this is actually a real system,
+then you'll want your wizard to be hidden or remote
+somehow, like the Ardvark example.
+And think about how you'd like to get feedback from users.
+This is something that we'll touch on several times more
+throughout this course.
+For now, think about whether you'd
+like to get think-aloud feedback, which
+is when the person's using the prototype,
+have them speak aloud what it is that's going through their mind,
+what decisions they're making, and why, what they're confused
+by, when they run up against things
+that they can't figure out what to do.
+This think-aloud protocol is great for getting stuff
+that otherwise you might not know or learn.
+However, as you can imagine, thinking aloud
+can change how people interact with the prototype.
+So if think-aloud is too distracting,
+you can ask people at the end of the study
+what was going through their mind and what they were thinking
+about.
+That's called a retrospective approach.
+If you like, you can even show them the video of them using
+it.
+And you can say things like, when you got stuck here,
+what was the issue?
+Third, if you have specific things
+that you'd like to make sure that your interface does well,
+you can have categories of problems or heuristics
+that you ask your users to pay attention to.
+And heuristic evaluation is something
+that we're going to talk more about later in this course also.
+Once you're all done, make sure to thank people for their time.
+You may want to give them a gift certificate or ice cream
+or some other kind of thank you.
+And if you haven't yet told them
+that there's actually a wizard behind the scenes
+operating the user interface, the end of the experiment
+is probably a really good time to do that.
+You want to make sure to be honest with people.
+You can use wizards throughout the entire development
+of your software, not just at the very beginning.
+And so if you have the fully functional software here
+and over time you move towards that,
+you can use wizards to fill in the gap of whatever's not
+built at that time.
+So the wizard may do all of the interaction
+at the very beginning.
+And then as you get closer and closer to a final project,
+you can have it just fill in only the parts that
+aren't done yet.
+As you can see, there's a lot to like
+about Wizard of Oz prototypes.
+They can be really fast to make, which makes them cheaper.
+And it also means you get to turn the crank
+on iteration more.
+Because they're quick, you can rapidly
+create multiple alternatives.
+And if you decide that you want the implementation
+to work differently, you just give your wizard
+different instructions.
+There's no code to rewrite.
+Because it is, in a sense, interactive, it's more real.
+And you get better feedback than just from paper prototyping.
+Although using paper prototypes as the substrate
+for a wizard is an excellent strategy early
+in the design process.
+It's a great way to get feedback about bugs and problems
+with your user interface design.
+Every single user interface that I've ever built
+or that I've ever seen built or that students of mine
+have ever built has had bugs early on.
+It's too hard to get right the first time.
+You're going to need to iterate and fail fast
+so that you can succeed sooner.
+And Wizard of Oz is a great tool to be able to do that.
+Because you're getting feedback from users early,
+it's a great way to place people at the center
+of the development process.
+It's also really wonderful for forward-looking applications
+as we start to think about how sensors and cameras
+and other futuristic technologies might enable
+new kinds of user interfaces.
+You can imagine these now by building Wizard of Oz prototypes.
+And lastly, strange as it may sound,
+you actually learn a lot about what the application logic
+of your interface ought to be and what makes sense
+by playing the wizard and embodying
+that role in the system.
+But there are some disadvantages, too.
+It can be easy to gloss over errors in technology
+that will ultimately come back to bite you,
+like speech recognition systems, for example.
+If at the end of the day, you're
+going to have bugs in your speech system,
+you want to make sure that your Wizard of Oz prototype
+encodes what happens when the speech record screws up,
+don't assume it's going to work perfectly all the time.
+Because if you're not careful, you
+can end up simulating a technology that doesn't exist
+and may never.
+People, for better or for worse, are inconsistent.
+And to get them to play the wizard role can require training,
+and so that's a ramp up time.
+And because you have to have a physical human there to run
+it, your runtime efficiency is slower,
+and it can be more exhausting for the people that
+are playing the wizard role.
+Wizards are great for some kind of functionality,
+like Kramer did with the speech user interface.
+But other stuff, it's harder to figure out
+what you can do with a wizard interface,
+and it may not be quite as effective.
+It may be clunkier.
+Or it may simply be inappropriate.
+There are some situations where having a wizard around
+may not be OK.
+All in all, I think wizards are an incredibly powerful technique
+and a really fun one to stretch your creativity.
+What kinds of new user interfaces
+can you imagine by creating a Wizard of Oz prototype?
+I'd like to thank Stephen Dow in creating this lecture.
+I drew on a lot of the materials that he's used in writing
+and speaking about Wizard of Oz prototypes.
+And if you're interested in learning more about wizards,
+you can see these resources here.
