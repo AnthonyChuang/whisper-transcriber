@@ -1,0 +1,14 @@
+# Ignore all video files
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.flv
+*.wmv
+*.webm
+*.mpg
+*.mpeg
+*.m4v
+
+# Optional: also ignore any folder where you keep raw videos
+videos/

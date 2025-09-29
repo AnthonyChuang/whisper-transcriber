@@ -1,0 +1,19 @@
+    name: Sync with Hugging Face Hub
+
+    on:
+      push:
+        branches:
+          - main # Or your desired branch
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4
+
+          - name: Sync with Hugging Face Space
+            uses: nateraw/huggingface-sync-action@v0.0.4 # Use the latest version
+            with:
+              hf_token: ${{ secrets.HF_TOKEN }}
+              hf_repo_id: anthonychuang/video-transcriber # Replace with your details
